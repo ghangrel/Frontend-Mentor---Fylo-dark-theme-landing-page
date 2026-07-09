@@ -395,3 +395,7 @@ input::placeholder {
     width: 1rem;
     height: 1rem;
 }
+
+.hidden {
+    display: none;
+}
