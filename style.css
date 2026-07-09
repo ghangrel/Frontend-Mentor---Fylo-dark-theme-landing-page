@@ -96,6 +96,11 @@ h2 {
     font-size: .8rem;
 }
 
+.menu nav a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 .illustration {
     padding: 2rem 2rem;
 }
@@ -116,6 +121,12 @@ h2 {
     font-weight: 700;
     width: 80%;
     align-self: center;
+}
+
+.intro-text button:hover {
+    filter: brightness(1.5);
+    box-shadow: inset 2px 2px 5px rgba(80, 246, 252, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 1) ;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .8);
 }
 
 /*Intro Text*/
@@ -166,6 +177,14 @@ h2 {
     gap: .5rem;
     border-bottom: 1px solid var(--Teal200);
     width: fit-content;
+}
+
+.anchor-text a:hover {
+    color: var(--white);
+}
+
+.anchor-text img:hover {
+    filter: brightness(10);
 }
 
 .anchor-text a{
@@ -266,8 +285,18 @@ input {
     width: 100%;
 }
 
+input:focus {
+    outline: none;
+}
+
 input::placeholder {
     color: rgb(218, 218, 218);
+}
+
+.error {
+    color: red;
+    font-family: var(--OpenSans);
+    font-size: .7rem;
 }
 
 .email-button {
@@ -277,6 +306,10 @@ input::placeholder {
     color: var(--white);
     width: 100%;
     border-radius: 2rem;
+}
+
+.email-button:hover {
+    filter: brightness(1.5);
 }
 
 .footer {
@@ -321,6 +354,11 @@ input::placeholder {
     color: var(--white);
 }
 
+.about a:hover, .terms a:hover {
+    font-weight: 700;
+
+}
+
 .socials {
     margin-block-start: 2rem;
     margin-block-end: 2rem;
@@ -341,6 +379,16 @@ input::placeholder {
     width: auto;
     height: auto;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.social:hover img {
+    filter: invert(53%) sepia(87%) saturate(515%) hue-rotate(136deg) brightness(94%) contrast(89%);   
+}
+
+.social:hover {
+    filter: brightness(.1);
+    border: 1px solid var(--Cyan500);
 }
 
 .social img {
