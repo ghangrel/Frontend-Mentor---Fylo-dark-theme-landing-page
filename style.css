@@ -239,7 +239,7 @@ main {
     padding: 2rem;
     margin-block-start: -63%;
     border-radius: .7rem;
-    box-shadow: ;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .4);
 }
 
 form {
@@ -341,4 +341,154 @@ form input::placeholder {
 
 .socials img:hover {
     filter: invert(62%) sepia(85%) saturate(409%) hue-rotate(133deg) brightness(94%) contrast(91%); 
+}
+
+@media (min-width: 48rem) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+    
+    main {
+        max-width: 1440px;
+    }
+
+    .header {
+        padding: 4.5rem 5rem 3rem;
+    }
+
+    .header img {
+        width: 11rem;
+    }
+
+    .header-nav {
+        gap: 3.5rem;
+    }
+
+    .header-nav a{
+        font-size: 1rem ;
+    }
+
+    .intro {
+        padding: 2rem 22.5rem;
+        gap: 2rem;
+    }
+
+    .intro p {
+        padding-inline: 3.5rem;
+    }
+
+    .started {
+        padding: 1rem 6rem;
+    }
+
+    .icons {
+        margin-block-start: 1.5rem;
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 12rem;
+    }
+
+    .icon {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .icon img {
+        height: 5rem;
+        margin-block-end: 1rem;
+    }
+
+    .icon h2 {
+        font-size: 1.3rem;
+    }
+
+    .icon p{
+        font-size: .85rem;
+        width: 70%;
+    }
+
+    .productive {
+        margin-block-start: 6rem;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+        padding: 0 7rem;
+    }
+
+    .productive h2 {
+        padding-inline-end: 4rem;
+    }
+
+    .productive-text {
+       margin-block-start: 1.5rem;
+    }
+
+    .productive p {
+        font-size: 1rem;
+    }
+
+    
+
+    .profiles {
+        display: flex;
+        flex-direction: row;
+        padding: 4rem 8rem;
+        background-size: 4rem;
+        background-position: top 20px left 130px;
+    }
+
+    .profiles p {
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email {
+        margin-block-start: -15%;
+        width: 62%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 2.5rem;
+    }
+
+    input {
+        width: 100%;
+    }
+    .submit {
+        width: 40%;
+    }
+
+    .footer {
+        padding: 0 5rem;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .location {
+        width: 30%;
+    }
 }
