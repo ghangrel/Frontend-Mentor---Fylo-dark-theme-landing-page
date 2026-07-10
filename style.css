@@ -276,6 +276,15 @@ form input::placeholder {
     filter: brightness(1.5);
 }
 
+.error {
+    color: var(--Red500);
+}
+
+.input-class{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer {
     margin-block-start: 5rem;
     display: flex;
@@ -341,6 +350,10 @@ form input::placeholder {
 
 .socials img:hover {
     filter: invert(62%) sepia(85%) saturate(409%) hue-rotate(133deg) brightness(94%) contrast(91%); 
+}
+
+.hidden {
+    display: none;
 }
 
 @media (min-width: 48rem) {
@@ -467,6 +480,15 @@ form input::placeholder {
         display: flex;
         flex-direction: row;
         padding: 1rem 2.5rem;
+    }
+
+    .input-class {
+        width: 100%;
+    }
+
+    .input-class span {
+        align-self: flex-start;
+        padding-inline-start: 2rem;
     }
 
     input {
